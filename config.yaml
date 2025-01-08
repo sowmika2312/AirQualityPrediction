@@ -1,0 +1,16 @@
+# Configuration File
+
+data:
+  raw_data_path: "data/raw/air_quality.csv"
+  processed_data_path: "data/processed/air_quality_cleaned.csv"
+
+model:
+  output_path: "output/model.pkl"
+  algorithm: "RandomForestRegressor"
+  n_estimators: 100
+  max_depth: 10
+
+webapp:
+  host: "0.0.0.0"
+  port: 5000
+  debug: true

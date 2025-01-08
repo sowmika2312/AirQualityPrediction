@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Prediction</h1>
+        <form action="/predict" method="POST">
+    <label for="CO">CO:</label>
+    <input type="text" id="CO" name="CO" required><br>
+
+    <label for="PT08.S1(CO)">PT08.S1(CO):</label>
+    <input type="text" id="PT08.S1(CO)" name="PT08.S1(CO)" required><br>
+
+    <label for="NMHC(GT)">NMHC(GT):</label>
+    <input type="text" id="NMHC(GT)" name="NMHC(GT)" required><br>
+
+    <label for="C6H6(GT)">C6H6(GT):</label>
+    <input type="text" id="C6H6(GT)" name="C6H6(GT)" required><br>
+
+    <label for="PT08.S2(NMHC)">PT08.S2(NMHC):</label>
+    <input type="text" id="PT08.S2(NMHC)" name="PT08.S2(NMHC)" required><br>
+
+    <label for="NOx(GT)">NOx(GT):</label>
+    <input type="text" id="NOx(GT)" name="NOx(GT)" required><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+        
+    </div>
+</body>
+</html>
